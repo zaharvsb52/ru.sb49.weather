@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItemCreateAppWidget"
+        android:title="@string/CreateAppWidgetTitle"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuItemAppWidgetRefresh"
+        android:icon="@drawable/ic_menu_refresh"
+        android:title="@string/RefreshTitle"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+</menu>

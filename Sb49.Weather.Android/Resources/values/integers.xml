@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="AppWidgetOpacityDefault">0</integer>
+  <integer name="AppWidgetOpacityMax">255</integer>
+  <integer name="GeoTrackingServiceIntervalDefault">15</integer>
+  <integer name="GeoTrackingServiceSmallestDisplacementDefault">5</integer>
+  <integer name="LoggingMaximumFileSizeDefault">100</integer>
+  <integer name="LoggingMaxSizeRollBackupsDefault">10</integer>
+  <integer name="ClockTextSizeDefault">60</integer>
+</resources>

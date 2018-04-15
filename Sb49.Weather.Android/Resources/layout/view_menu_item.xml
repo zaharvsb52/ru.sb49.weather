@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menuItemHeight"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/menuItemHeight"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/imgIconLeft"
+        android:layout_width="@dimen/menuItemImageDimen"
+        android:layout_height="@dimen/menuItemImageDimen"
+        android:layout_marginEnd="@dimen/menuItemMarginEnd"
+        android:layout_marginStart="@dimen/menuItemIconMarginStart"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="@dimen/menuItemMarginStart"
+        android:drawablePadding="@dimen/menuItemTitleDrawablePadding"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/menuItemTitleMarginEnd"
+        android:paddingStart="0dp"
+        android:textColor="?attr/menuDrawerLayoutItemTextColor"
+        android:textSize="@dimen/menuItemTitleTextSize"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        tools:text="item" />
+
+    <ImageView
+        android:id="@+id/imgIconRight"
+        android:layout_width="@dimen/menuItemImageDimen"
+        android:layout_height="@dimen/menuItemImageDimen"
+        android:layout_marginEnd="@dimen/menuItemMarginEnd"
+        android:layout_marginStart="@dimen/menuItemIconMarginStart"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="ContentDescription"
+        tools:visibility="visible" />
+</LinearLayout>

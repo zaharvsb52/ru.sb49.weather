@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="@string/AlertSettingsKey">
+  <Sb49.Weather.Droid.Ui.Preferences.CustomEditTextPreference
+        android:key="@string/ColdAlertedTemperatureKey"
+        android:inputType="numberSigned"
+        android:persistent="false"
+        android:title="@string/ColdAlertedTemperatureTitle" />
+  <Sb49.Weather.Droid.Ui.Preferences.CustomEditTextPreference
+        android:key="@string/HotAlertedTemperatureKey"
+        android:inputType="numberSigned"
+        android:persistent="false"
+        android:title="@string/HotAlertedTemperatureTitle" />
+</android.support.v7.preference.PreferenceScreen>

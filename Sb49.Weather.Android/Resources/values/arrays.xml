@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string-array name="DateFormatEntries">
+    <item>Short</item>
+    <item>Middle</item>
+    <item>Long</item>
+  </string-array>
+  <string-array name="DateFormatValues">
+    <item>@string/zero</item>
+    <item>@string/DateFormatValueDefault</item>
+    <item>@string/two</item>
+  </string-array>
+  <string-array name="WeatherRefreshIntervalEntries">
+    <item>Manually</item>
+    <item>15 minuts</item>
+    <item>Half an hour</item>
+    <item>1 hour</item>
+    <item>2 hours</item>
+    <item>3 hours</item>
+  </string-array>
+  <string-array name="WeatherRefreshIntervalValues">
+    <item>-1</item>
+    <item>@string/WeatherRefreshIntervalValueMinimum</item>
+    <item>30</item>
+    <item>60</item>
+    <item>@string/WeatherRefreshIntervalValueDefault</item>
+    <item>180</item>
+  </string-array>
+  <string-array name="AppWidgetBackgroundStyleEntries">
+    <item>Black</item>
+    <item>Gray</item>
+    <item>Green to red</item>
+  </string-array>
+  <string-array name="AppWidgetBackgroundStyleValues">
+    <item>@string/AppWidgetBackgroundStyleValueDefault</item>
+    <item>wg_background_blue_grey</item>
+    <item>wg_background_green_red_gradient</item>
+  </string-array>
+  <string-array name="LoggingLevelsValuesDefault">
+    <item>@string/LoggingLevelInfo</item>
+    <item>@string/LoggingLevelError</item>
+  </string-array>
+  <string-array name="LoggingLevelsValues">
+    <item>@string/LoggingLevelInfo</item>
+    <item>Debug</item>
+    <item>@string/LoggingLevelError</item>
+  </string-array>
+  <string-array name="LoggingLevelsReadOnlyEntries">
+    <item>@string/LoggingLevelError</item>
+  </string-array>
+  <string-array name="LoggingSelectLogFileEntries">
+    <item>Application folder</item>
+    <item>Select</item>
+  </string-array>
+  <string-array name="LoggingSelectLogFileValues">
+    <item>@string/zero</item>
+    <item>@string/one</item>
+  </string-array>
+</resources>

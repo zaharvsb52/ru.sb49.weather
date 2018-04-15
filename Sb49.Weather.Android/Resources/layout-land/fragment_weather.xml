@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spaceDefault"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spaceDefault"
+            android:layout_marginRight="@dimen/spaceDefault"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgCondition"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/umbrela" />
+
+            <TextView
+                android:id="@+id/txtTemp"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                tools:text="-23°" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCondition"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/spaceDefault"
+            android:layout_marginRight="@dimen/spaceDefault"
+            android:gravity="center_vertical"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="Возможно всё" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/viewLayoutMarginTop"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/spaceDefault"
+            android:paddingStart="@dimen/spaceDefault"
+            android:weightSum="2"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtWind"
+                        style="@style/textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Wind"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imgWindDirection"
+                        android:layout_width="@dimen/viewWindImageDimen"
+                        android:layout_height="@dimen/viewWindImageDimen"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/wind_direction"
+                        tools:ignore="ContentDescription"
+                        tools:rotation="200"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/txtWindDirection"
+                        style="@style/textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="4dp"
+                        tools:text="С-З" />
+
+                    <TextView
+                        android:id="@+id/txtWindSpeed"
+                        style="@style/textStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="40 м/с" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtPressure"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Давление 768 мм" />
+
+                <TextView
+                    android:id="@+id/txtHumidity"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Влажность 89%" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtApparentTemp"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Ощущается как -50°" />
+
+                <TextView
+                    android:id="@+id/txtVisibility"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Видимость 10 км" />
+
+                <TextView
+                    android:id="@+id/txtSunInfo"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="Восход 9:00 Закат 16:00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="@dimen/viewLayoutMarginTop"
+            android:background="@color/blueGrey800"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/imgLogoWeather"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/umbrela"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/txtLogoWeather"
+                style="@style/logoWeatherTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imgLogoWeather"
+                tools:text="Yahoo weather" />
+
+            <HorizontalScrollView
+                android:id="@+id/viewInfoScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/txtLogoWeather"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txtPublishedDate"
+                        style="@style/logoWeatherTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="Прогноз на 2 фев 17 14:05:55" />
+
+                    <TextView
+                        android:id="@+id/txtLastUpdate"
+                        style="@style/logoWeatherTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        tools:text="Обновлено 2 фев 17 14:05:55" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gridWeatherByDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_height="50dp" />
+
+        <include layout="@layout/view_weather_daily_details_item" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+</ScrollView>

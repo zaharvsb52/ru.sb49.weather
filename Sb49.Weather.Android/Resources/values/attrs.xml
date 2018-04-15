@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="minimum" format="integer" />
+        <attr name="maximum" format="integer" />
+        <attr name="format" format="string" />
+        <attr name="unit" format="string" />
+        <attr name="minTitle" format="string" />
+        <attr name="maxTitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomPreference">
+        <attr name="needStartNewActivity" format="boolean" />
+        <attr name="activityTitle" format="reference" />
+        <attr name="activityFragmentLayout" format="reference" />
+        <attr name="extraValues" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomMultiSelectListPreference">
+        <attr name="readOnlyEntries" format="reference" />
+    </declare-styleable>
+    <attr name="menuDrawerLayoutBackground" format="reference" />
+    <attr name="menuDrawerLayoutItemIconRightBackground" format="reference" />
+    <attr name="menuDrawerLayoutItemTextColor" format="reference|color" />
+    <attr name="menuDrawerLayoutItemIconBackground" format="reference|color" />
+    <attr name="menuDrawerLayoutItemFixIconBackground" format="reference|color" />
+    <attr name="toolbarTheme" format="reference" />
+    <attr name="toolbarPopupTheme" format="reference" />
+    <attr name="customMenuBackground" format="reference" />
+    <attr name="lineBackgroundColor" format="reference" />
+</resources>

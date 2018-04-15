@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/viewContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineThickness1dp"
+            android:background="?attr/lineBackgroundColor"
+            tools:background="@color/gray300" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="10dp"
+            android:paddingStart="6dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgNewFileName"
+                android:layout_width="@dimen/menuItemImageDimen"
+                android:layout_height="@dimen/menuItemImageDimen"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_file" />
+
+            <EditText
+                android:id="@+id/txtNewFileName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:inputType="text"
+                tools:ignore="LabelFor"
+                tools:text="log.txt" />
+
+            <Button
+                android:id="@+id/btnAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:textAllCaps="false"
+                tools:text="Сохранить" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Sb49.Security</AssemblyTitle>
+    <AssemblyProduct>Sb49.Security</AssemblyProduct>
+    <AssemblyCompany>SB49 Software</AssemblyCompany>
+    <Copyright>Copyright SB49 Software 2012-2017</Copyright>
+    <AssemblyTrademark>SB49 Software</AssemblyTrademark>
+
+    <AssemblyVersion>1.0.4.3</AssemblyVersion>
+    <AssemblyFileVersion>1.0.4.3</AssemblyFileVersion>
+    
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

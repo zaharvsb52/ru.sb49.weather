@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Sb49.Http</AssemblyTitle>
+    <AssemblyProduct>Sb49.Http</AssemblyProduct>
+    <AssemblyCompany>SB49 Software</AssemblyCompany>
+    <Copyright>Copyright SB49 Software 2012-2017</Copyright>
+    <AssemblyTrademark>SB49 Software</AssemblyTrademark>
+
+    <AssemblyVersion>1.0.4.3</AssemblyVersion>
+    <AssemblyFileVersion>1.0.4.3</AssemblyFileVersion>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>  
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.ru.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <plurals name="minute">
+    <item quantity="other">%d минут</item>
+    <item quantity="one">%d минута</item>
+    <item quantity="few">%d минуты</item>
+    <item quantity="many">%d минут</item>
+  </plurals>
+  <plurals name="meter">
+    <item quantity="other">%d метров</item>
+    <item quantity="one">%d метр</item>
+    <item quantity="few">%d метра</item>
+    <item quantity="many">%d метров</item>
+  </plurals>
+  <plurals name="kilometer">
+    <item quantity="other">%d километров</item>
+    <item quantity="one">%d километр</item>
+    <item quantity="few">%d километра</item>
+    <item quantity="many">%d километров</item>
+  </plurals>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--
+        Base application theme for API 21+. This theme replaces
+        MyTheme from resources/values/styles.xml on API 21+ devices.
+  -->
+  <style name="Theme.Custom" parent="Theme.Custom.Base">
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+    <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    <!-- Custom -->
+    <item name="menuDrawerLayoutBackground">@drawable/menu_background_gradient_radial</item>
+    <item name="menuDrawerLayoutItemIconRightBackground">@color/white</item>
+    <item name="menuDrawerLayoutItemTextColor">@color/menu_item_textcolor_selector_white</item>
+    <item name="menuDrawerLayoutItemIconBackground">@color/menu_item_icon_background_selector_white</item>
+    <item name="menuDrawerLayoutItemFixIconBackground">@color/menu_item_fixicon_background_selector_white</item>
+    <item name="customMenuBackground">?android:attr/selectableItemBackgroundBorderless</item> 
+    <item name="lineBackgroundColor">@color/lineBackgroundColor</item>
+  </style>
+</resources>

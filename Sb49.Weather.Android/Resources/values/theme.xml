@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Theme.Custom" parent="Theme.Custom.Base">
+    <!--<item name="menuDrawerLayoutBackground">@color/gray800</item>-->
+    <item name="menuDrawerLayoutBackground">@drawable/menu_background_gradient_radial</item>
+    <item name="menuDrawerLayoutItemIconRightBackground">@color/white</item>
+    <item name="menuDrawerLayoutItemTextColor">@color/menu_item_textcolor_selector_white</item>
+    <item name="menuDrawerLayoutItemIconBackground">@color/menu_item_icon_background_selector_white</item>
+    <item name="menuDrawerLayoutItemFixIconBackground">@color/menu_item_fixicon_background_selector_white</item>
+    
+    <!--<item name="toolbarTheme">@style/ThemeOverlay.AppCompat.ActionBar</item>-->
+    <!--<item name="toolbarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+    
+    <item name="customMenuBackground">?android:attr/selectableItemBackground</item>
+    <item name="lineBackgroundColor">@color/lineBackgroundColor</item>
+  </style>
+
+  <!--Base theme applied no matter what API-->
+  <!--<style name="Theme.Custom.Base" parent="Theme.AppCompat.Light.DarkActionBar">-->
+  <style name="Theme.Custom.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+    <item name="windowNoTitle">true</item>
+    
+    <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+    
+    <!--Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette
+          colorPrimary is used for the default action bar background-->
+    <!--<item name="colorPrimary">@color/blue500</item>-->
+    <!--<item name="colorPrimary">@color/blueGrey</item>-->
+    <!--<item name="colorPrimary">@color/blueA100</item>-->
+    <item name="colorPrimary">@color/blue200</item>
+    
+    <!--colorPrimaryDark is used for the status bar-->
+    <!--<item name="colorPrimaryDark">@color/blue700</item>-->
+    <item name="colorPrimaryDark">@color/blueGrey800</item>
+
+    <!--<item name="android:textColorPrimary">@color/white</item>-->
+    
+    <!--colorAccent is used as the default value for colorControlActivated
+          which is used to tint widgets-->
+    <!--<item name="colorAccent">@color/pinkA200</item>-->
+    <item name="colorAccent">@color/blue500</item>
+
+    <item name="colorControlHighlight">@color/pinkA200</item>
+    <!--You can also set colorControlNormal, colorControlActivated
+        colorControlHighlight and colorSwitchThumbNormal.-->
+    
+    <!-- Preferences -->
+    <!--<item name="preferenceTheme">@style/PreferenceThemeOverlay</item>-->
+    <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+  </style>
+
+  <style name="Theme.Custom.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="Theme.Custom.Translucent" parent="Theme.Custom.Base">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+</resources>

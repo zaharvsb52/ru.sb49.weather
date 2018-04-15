@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Sb49.Provider OpenWeatherMap</AssemblyTitle>
+    <AssemblyProduct>Sb49.Provider.OpenWeatherMap</AssemblyProduct>
+    <AssemblyCompany>SB49 Software</AssemblyCompany>
+    <Copyright>Copyright SB49 Software 2012-2017</Copyright>
+    <AssemblyTrademark>SB49 Software</AssemblyTrademark>
+
+    <AssemblyVersion>1.0.4.12</AssemblyVersion>
+    <AssemblyFileVersion>1.0.4.12</AssemblyFileVersion>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sb49.Weather\Sb49.Weather.csproj" />
+  </ItemGroup>
+
+</Project>

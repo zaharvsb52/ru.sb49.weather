@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Sb49.Geocoder</AssemblyTitle>
+    <AssemblyProduct>Sb49.Geocoder</AssemblyProduct>
+    <AssemblyCompany>SB49 Software</AssemblyCompany>
+    <Copyright>Copyright SB49 Software 2012-2017</Copyright>
+    <AssemblyTrademark>SB49 Software</AssemblyTrademark>
+
+    <AssemblyVersion>1.0.4.1</AssemblyVersion>
+    <AssemblyFileVersion>1.0.4.1</AssemblyFileVersion>
+    
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sb49.Security\Sb49.Security.csproj" />
+    <ProjectReference Include="..\..\Sb49.Http\Sb49.Http.csproj" />
+  </ItemGroup>
+
+</Project>

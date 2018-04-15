@@ -1,0 +1,38 @@
+Версия 2.19.23.1055 (1.0.6.5)
+Bugfix: "Не удалось загрузить виджет".
+_____________________________________________
+
+Версия 2.19.23.1056 (1.0.6.8)
+Bugfix: Размер zip-архива на Google диске 0 байт.
+Bugfix: Лишние обновления при открытии MainActivity из Widget'а.
+Bugfix: Ошибки в ApiKeyManagementActivity: сохранение на Google диск, изменение UseGoogleMapsGeocodingApi в false при импортировании пустого файла.
+Bugfix: Восход, заход.
+Bugfix: При повороте экрана не сохраняется выбранный погодный провайдер, место при открытии из Widget'а.
+Added: Комментарий в zip-архив.
+Added: SimpleZip.
+Added: Кеш в AppSettings для CurrentLocation.
+Changed: Обновление AppWidget'а перенесено в меню SettingsActivity.
+_____________________________________________
+
+Версия 2.19.23.1056 (1.0.6.9)
+Changed: Weather tooltip в WeatherContentFragment.
+Changed: Обновление AppWidget в MainActivity.OnUpdateWeatherData.
+_____________________________________________
+
+Версия 2.19.23.1056 (1.0.6.10)
+Bugfix: Лишний скроллинг в FileDocumentAdapter.
+Added: ReadOnly property HasIcons в WeatherForecast.
+Changed: MainActivity.OnRefresh.
+Changed: MainActivity.ShowProgressbar.
+Added: CancellationTokenSource в MainActivity для метода UpdateWeatherContentFragmentAsync.
+_____________________________________________
+
+Версия 2.19.23.1056 (1.0.6.11)
+New: Xamarin
+Added: IsServiceRunning в GeoTrackingService, WeatherService (ActivityManager.GetRunningServices is deprecated).
+_____________________________________________
+
+Версия 2.19.23.1057 (1.0.7.1) 2018 03 23
+New: Xamarin 8.1.
+Changed: log4net. TextWriterAdapter, CompatibilityExtensions.
+Build: 1G stack. 

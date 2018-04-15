@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="NoForecastMessage">Weather forecast not available at this time. Try again later.</string>
+  <string name="UnableDetermineAddress">Unable to determine the location. Try again in a few minutes.</string>
+  <string name="UndefinedWeatherServiceProvider">Weather provider is undefined.</string>
+  <string name="UndefinedCurrentLocation">Current location is not defined.</string>
+  <string name="UndefinedLocation">Location is not defined.</string>
+  <string name="UndefinedAddressCoordinates">Address coordinates is undefined.</string>
+  <string name="WeatherProviderIsNotImplemented">Selected weather provider \'{0}\' is not implemented yet. Please select other service.</string>
+  <string name="NoSDcardFound">No external SD card found.</string>
+  <string name="InputIntegerError">Input integer value.</string>
+  <string name="UndefinedAppWidgetSettings">Undefined AppWidget settings.</string>
+  <string name="ProhibitLocationSettings">Location system settings is prohibited.</string>
+  <string name="EmptyLocationAddressError">Undefinded address.</string>
+  <string name="ExstsLocationAddressError">Address already exists.</string>
+  <string name="ConnectFailure">Network is unreachable. Check Internet access.</string>
+  <string name="IllegalLogFileUri">It is impossible to determine the path of the log file. Select another path.</string>
+  <string name="EmptyLoggingLevelsError">Logging levels are not defined.</string>
+  <string name="LocalityIsNullLocationAddressError">Required field \'Locality\' is empty.</string>
+  <string name="TaskCanceled">The operation was canceled.</string>
+  <string name="TaskTimeout">The operation has timed out.</string>
+  <string name="NoEmailClientsInstalled">No email clients installed.</string>
+  <string name="InternalError">An internal error occurred.</string>
+</resources>

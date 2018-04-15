@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+  <Sb49.Weather.Droid.Ui.Controls.CustomEditText
+      android:id="@+id/txtLocationAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/txtLocationAddressHint"
+        android:imeOptions="actionSearch"
+        android:inputType="textPostalAddress"
+        android:maxLines="1"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:text="Сергиев Посад 7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center_horizontal"
+        android:text="@string/LocationAddressFormat"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lineThickness1dp"
+        android:background="?attr/lineBackgroundColor"
+        tools:background="@color/gray300" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/viewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:scrollbars="vertical" />
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="@string/AppWidgetSettingsKey">
+    <Sb49.Weather.Droid.Ui.Preferences.ImagePreference
+        android:key="@string/AppWidgetViewKey"
+        android:layout="@layout/view_appwidget"
+        android:persistent="false"
+        android:selectable="false" />
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/AppWidgetSettingsAppearanceTitle">
+        <android.support.v7.preference.ListPreference
+            android:key="@string/AppWidgetIconStyleKey"
+            android:persistent="false"
+            android:summary="%s"
+            android:title="@string/AppWidgetIconStyleTitle" />
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="@string/AppWidgetBackgroundStyleValueDefault"
+            android:entries="@array/AppWidgetBackgroundStyleEntries"
+            android:entryValues="@array/AppWidgetBackgroundStyleValues"
+            android:key="@string/AppWidgetBackgroundStyleKey"
+            android:persistent="false"
+            android:summary="%s"
+            android:title="@string/AppWidgetBackgroundStyleTitle" />
+        <Sb49.Weather.Droid.Ui.Preferences.CustomSeekBarPreference
+            android:defaultValue="@integer/AppWidgetOpacityDefault"
+            android:key="@string/AppWidgetOpacityKey"
+            android:persistent="false"
+            android:title="@string/AppWidgetOpacityTitle"
+            app:maxTitle="@string/AppWidgetOpacity100"
+            app:maximum="@integer/AppWidgetOpacityMax"
+            app:minTitle="@string/AppWidgetOpacity0" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory
+        android:key="@string/AppWidgetSettingsClockKey"
+        android:title="@string/AppWidgetSettingsClockTitle">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="@string/HourFormatKey"
+            android:persistent="false"
+            android:title="@string/HourFormatTitle" />
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="@bool/ExtendedHourFormatDefault"
+            android:key="@string/ExtendedHourFormatKey"
+            android:persistent="false"
+            android:title="@string/ExtendedHourFormatTitle" />
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="@string/DateFormatValueDefault"
+            android:entries="@array/DateFormatEntries"
+            android:entryValues="@array/DateFormatValues"
+            android:key="@string/DateFormatKey"
+            android:persistent="false"
+            android:summary="%s"
+            android:title="@string/DateFormatTitle" />
+        <Sb49.Weather.Droid.Ui.Preferences.SeekBarPreferenceCompat
+            android:key="@string/ClockTextSizeKey"
+            android:title="@string/ClockTextSizeTitle"
+            android:persistent="false"
+            app:maximum="80"
+            app:minimum="14"
+            app:format="{0} sp" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory
+        android:key="@string/LocationAddressSettingsKey"
+        android:title="@string/LocationAddressSettingsTitle">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="@bool/UseTrackCurrentLocationDefault"
+            android:key="@string/UseTrackCurrentLocationKey"
+            android:persistent="false"
+            android:title="@string/UseTrackCurrentLocationTitle" />
+        <android.support.v7.preference.PreferenceScreen
+            android:key="@string/LocationAddressKey"
+            android:persistent="false"
+            android:title="@string/LocationAddressTitle" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/WeatherTitle">
+        <android.support.v7.preference.ListPreference
+            android:key="@string/WeatherProviderServerKey"
+            android:persistent="false"
+            android:summary="%s"
+            android:title="@string/WeatherProviderServerTitle" />
+        <android.support.v7.preference.ListPreference
+            android:defaultValue="@string/WeatherRefreshIntervalValueDefault"
+            android:entries="@array/WeatherRefreshIntervalEntries"
+            android:entryValues="@array/WeatherRefreshIntervalValues"
+            android:key="@string/WeatherRefreshIntervalKey"
+            android:persistent="false"
+            android:summary="%s"
+            android:title="@string/WeatherRefreshIntervalTitle" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+</android.support.v7.preference.PreferenceScreen>

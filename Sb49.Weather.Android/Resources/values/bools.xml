@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <bool name="ExtendedHourFormatDefault">true</bool>
+  <bool name="UseTrackCurrentLocationDefault">true</bool>
+  <bool name="UseGoogleMapsGeocodingApiDefault">false</bool>
+  <bool name="LoggingUseAndroidLogDefault">true</bool>
+  <bool name="LoggingUseFileDefault">false</bool>
+  <bool name="Land">false</bool>
+  <bool name="ShowFileSizeDefault">false</bool>
+  <bool name="ShowFolderSizeDefault">false</bool>
+</resources>

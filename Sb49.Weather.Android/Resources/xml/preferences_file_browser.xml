@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/FileBrowserSettingsKey">
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/MenuItemFileBrowserSettingsTitle">
+        <android.support.v7.preference.CheckBoxPreference
+            android:defaultValue="@bool/ShowFileSizeDefault"
+            android:key="@string/ShowFileSizeKey"
+            android:title="@string/ShowFileSizeTitle" />
+        <android.support.v7.preference.CheckBoxPreference
+            android:defaultValue="@bool/ShowFolderSizeDefault"
+            android:key="@string/ShowFolderSizeKey"
+            android:title="@string/ShowFolderSizeTitle" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+</android.support.v7.preference.PreferenceScreen>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItemFileBrowserUpward"
+        android:icon="@drawable/ic_menu_arrow_upward"
+        android:title="@string/MenuItemFileBrowserUpwardTitle"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemFileBrowserCreateFolder"
+        android:icon="@drawable/ic_menu_create_new_folder"
+        android:title="@string/MenuItemFileBrowserCreateFolderTitle"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemFileBrowserSort"
+        android:icon="@drawable/ic_menu_sort"
+        android:title="@string/MenuItemFileBrowserSortTitle"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menuItemFileBrowserSortByName"
+                    android:title="@string/MenuItemFileBrowserSortByNameTitle" />
+                <item
+                    android:id="@+id/menuItemFileBrowserSortByDate"
+                    android:title="@string/MenuItemFileBrowserSortByDateTitle" />
+                <item
+                    android:id="@+id/menuItemFileBrowserSortBySize"
+                    android:title="@string/MenuItemFileBrowserSortBySizeTitle" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menuItemFileBrowserRefresh"
+        android:icon="@drawable/ic_menu_refresh"
+        android:title="@string/RefreshTitle"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemFileBrowserSettings"
+        android:title="@string/MenuItemFileBrowserSettingsTitle"
+        app:showAsAction="never" />
+</menu>

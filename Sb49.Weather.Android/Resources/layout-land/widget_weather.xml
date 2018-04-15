@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewWidget"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:layout_height="70dp"
+    tools:layout_width="380dp">
+
+    <ImageView
+        android:id="@+id/imgWgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/wg_background_black" />
+
+    <LinearLayout
+        android:id="@+id/viewWgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imgCondition"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription=""
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/fancy_widget_bkn_sn_d_white" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="-40dp">
+
+            <TextView
+                android:id="@+id/txtTemp"
+                style="@style/wgTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="45dp"
+                android:ellipsize="none"
+                android:textSize="30sp"
+                tools:text="-55°" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    style="@style/wgTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp"
+                    tools:text="Сергиев Посад 7" />
+
+                <TextView
+                    android:id="@+id/txtCondition"
+                    style="@style/wgTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    tools:text="Небольшой снегопад" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/viewGridTempRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:columnCount="2"
+                android:rowCount="2"
+                tools:ignore="RelativeOverlap">
+
+                <TextView
+                    android:id="@+id/txtLowIndicator"
+                    style="@style/wgTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_row="0"
+                    android:ellipsize="none"
+                    android:text="@string/TempLowIndicator"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtLow"
+                    style="@style/wgTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="bottom|end"
+                    android:layout_row="0"
+                    android:ellipsize="none"
+                    android:textSize="14sp"
+                    tools:text="-1°" />
+
+                <TextView
+                    android:id="@+id/txtHighIndicator"
+                    style="@style/wgTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_row="1"
+                    android:ellipsize="none"
+                    android:text="@string/TempHightIndicator"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:text="Макс:"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtHigh"
+                    style="@style/wgTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="bottom|end"
+                    android:layout_row="1"
+                    android:ellipsize="none"
+                    android:textSize="14sp"
+                    tools:text="-31°" />
+            </GridLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="lineBackgroundColor">@color/gray400</color>
+  <color name="background_weather_daily_item_color">@color/gray300</color>
+</resources>

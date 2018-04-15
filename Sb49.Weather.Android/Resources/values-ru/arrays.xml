@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string-array name="DateFormatEntries">
+    <item>Короткий</item>
+    <item>Средний</item>
+    <item>Длинный</item>
+  </string-array>
+  <string-array name="WeatherRefreshIntervalEntries">
+    <item>Вручную</item>
+    <item>15 минут</item>
+    <item>Полчаса</item>
+    <item>1 час</item>
+    <item>2 часа</item>
+    <item>3 часа</item>
+  </string-array>
+  <string-array name="AppWidgetBackgroundStyleEntries">
+    <item>Чёрный</item>
+    <item>Серый</item>
+    <item>Зелено-красный</item>
+  </string-array>
+  <string-array name="LoggingSelectLogFileEntries">
+    <item>Папка приложения</item>
+    <item>Выбрать</item>
+  </string-array>
+</resources>

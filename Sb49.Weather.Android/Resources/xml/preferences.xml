@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="appsettingskey">
+    <android.support.v7.preference.ListPreference
+        android:key="@string/TemperatureUnitKey"
+        android:summary="%s"
+        android:title="@string/TemperatureUnitTitle" />
+    <android.support.v7.preference.ListPreference
+        android:key="@string/WindSpeedUnitKey"
+        android:summary="%s"
+        android:title="@string/WindSpeedUnitTitle" />
+    <android.support.v7.preference.ListPreference
+        android:key="@string/PressureUnitKey"
+        android:summary="%s"
+        android:title="@string/PressureUnitTitle" />
+    <android.support.v7.preference.ListPreference
+        android:key="@string/VisibilityUnitKey"
+        android:summary="%s"
+        android:title="@string/VisibilityUnitTitle" />
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreference
+        android:key="@string/AlertSettingsKey"
+        android:persistent="false"
+        android:title="@string/AlertSettingsTitle"
+        app:activityFragmentLayout="@xml/preferences_alert"
+        app:activityTitle="@string/AlertSettingsTitle"
+        app:needStartNewActivity="true" />
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/AppWidgetsSettingsTitle">
+        <Sb49.Weather.Droid.Ui.Preferences.CustomPreference
+            android:key="@string/AppWidgetSettingsKey"
+            android:persistent="false"
+            android:title="@string/CurrentAppWidgetSettingsTitle"
+            app:activityFragmentLayout="@xml/preferences_appwidget"
+            app:activityTitle="@string/AppWidgetSettingsTitle"
+            app:extraValues="widget"
+            app:needStartNewActivity="true" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/GeoTrackingTitle">
+        <android.support.v7.preference.ListPreference
+            android:key="@string/GeoTrackingServicePriorityKey"
+            android:summary="%s"
+            android:title="@string/GeoTrackingServicePriorityTitle" />
+        <Sb49.Weather.Droid.Ui.Preferences.SeekBarPreferenceCompat
+            android:defaultValue="@integer/GeoTrackingServiceIntervalDefault"
+            android:key="@string/GeoTrackingServiceIntervalKey"
+            android:title="@string/GeoTrackingServiceIntervalTitle"
+            app:maximum="60"
+            app:minimum="6"
+            app:unit="minute" />
+        <Sb49.Weather.Droid.Ui.Preferences.SeekBarPreferenceCompat
+            android:defaultValue="@integer/GeoTrackingServiceSmallestDisplacementDefault"
+            android:key="@string/GeoTrackingServiceSmallestDisplacementKey"
+            android:title="@string/GeoTrackingServiceSmallestDisplacementTitle"
+            app:maximum="15"
+            app:minimum="0"
+            app:unit="kilometer" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/GoogleApiTitle">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="@bool/UseGoogleMapsGeocodingApiDefault"
+            android:key="@string/UseGoogleMapsGeocodingApiKey"
+            android:summary="@string/IsRequiredApiKey"
+            android:title="@string/UseGoogleMapsGeocodingApiTitle" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/ApiKeysTitle">
+        <android.support.v7.preference.PreferenceScreen
+            android:key="@string/ApiKeysManagementKey"
+            android:persistent="false"
+            android:title="@string/ApiKeysManagementTitle" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+    <Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory android:title="@string/LoggingTitle">
+        <Sb49.Weather.Droid.Ui.Preferences.CustomMultiSelectListPreference
+            android:defaultValue="@array/LoggingLevelsValuesDefault"
+            android:entries="@array/LoggingLevelsValues"
+            android:entryValues="@array/LoggingLevelsValues"
+            android:key="@string/LoggingLevelsKey"
+            android:summary="%s"
+            android:title="@string/LoggingLevelsTitle"
+            app:readOnlyEntries="@array/LoggingLevelsReadOnlyEntries" />
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="@bool/LoggingUseAndroidLogDefault"
+            android:key="@string/LoggingUseAndroidLogKey"
+            android:title="@string/LoggingUseAndroidLogTitle" />
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="@bool/LoggingUseFileDefault"
+            android:disableDependentsState="false"
+            android:key="@string/LoggingUseFileKey"
+            android:title="@string/LoggingUseFileTitle" />
+        <android.support.v7.preference.ListPreference
+            android:dependency="@string/LoggingUseFileKey"
+            android:entries="@array/LoggingSelectLogFileEntries"
+            android:entryValues="@array/LoggingSelectLogFileValues"
+            android:key="@string/LoggingSelectLogFileKey"
+            android:persistent="false"
+            android:title="@string/LoggingSelectLogFileTitle" />
+        <Sb49.Weather.Droid.Ui.Preferences.SeekBarPreferenceCompat
+            android:defaultValue="@integer/LoggingMaximumFileSizeDefault"
+            android:dependency="@string/LoggingUseFileKey"
+            android:key="@string/LoggingMaximumFileSizeKey"
+            android:title="@string/LoggingMaximumFileSizeTitle"
+            app:format="{0} KB"
+            app:maximum="1024"
+            app:minimum="50" />
+        <Sb49.Weather.Droid.Ui.Preferences.SeekBarPreferenceCompat
+            android:defaultValue="@integer/LoggingMaxSizeRollBackupsDefault"
+            android:dependency="@string/LoggingUseFileKey"
+            android:key="@string/LoggingMaxSizeRollBackupsKey"
+            android:title="@string/LoggingMaxSizeRollBackupsTitle"
+            app:format="{0}"
+            app:maximum="20"
+            app:minimum="0" />
+    </Sb49.Weather.Droid.Ui.Preferences.CustomPreferenceCategory>
+</android.support.v7.preference.PreferenceScreen>

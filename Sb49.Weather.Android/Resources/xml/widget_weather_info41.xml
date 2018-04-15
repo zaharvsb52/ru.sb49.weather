@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/widgetWeatherMinWidth"
+    android:minHeight="@dimen/widgetWeatherMinHeight"
+    android:updatePeriodMillis="0"
+    android:previewImage="@drawable/preview_weather_info"
+    android:initialLayout="@layout/widget_loading"
+    android:configure="ru.sb49.weather.Ui.Activities.SettingsActivity" />

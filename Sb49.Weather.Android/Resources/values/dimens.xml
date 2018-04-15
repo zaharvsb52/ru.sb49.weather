@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="widgetWeatherMinWidth">250dp</dimen>
+  <dimen name="widgetWeatherMinHeight">40dp</dimen>
+  <dimen name="widgetWeatherClockMinHeight">110dp</dimen>
+  <dimen name="lineThickness1dp">1dp</dimen>
+  <dimen name="spaceDefault">8dp</dimen>
+  <dimen name="viewLayoutMarginTop">10dp</dimen>
+  <!--<dimen name="menuWidth">240dp</dimen>-->
+  <dimen name="menuWidth">304dp</dimen>
+  <dimen name="menuItemImageDimen">24dp</dimen>
+  <dimen name="menuItemTitleDrawablePadding">23dp</dimen>
+  <dimen name="menuItemMarginStart">21dp</dimen>
+  <dimen name="menuItemMarginEnd">15dp</dimen>
+  <dimen name="menuItemTitleMarginEnd">10dp</dimen>
+  <dimen name="menuItemTitleTextSize">16sp</dimen>
+  <dimen name="menuItemIconMarginStart">16dp</dimen>
+  <dimen name="menuItemHeight">64dp</dimen>
+  <dimen name="menuItemSeparatorMargin">10dp</dimen>
+  <dimen name="menuItemEmptyLineHeight">15dp</dimen>
+  <dimen name="itemMarginTop">5dp</dimen>
+  <dimen name="itemConditionImageDimen">30dp</dimen>
+  <dimen name="viewWindImageDimen">18dp</dimen>
+  <dimen name="itemWindImageDimen">16dp</dimen>
+  <dimen name="itemDetailsWindImageDimen">12dp</dimen>
+  <dimen name="alertImageDimen">30dp</dimen>
+  <dimen name="viewAppWidgetHeight">240dp</dimen>
+  <dimen name="customEditTextCompoundDrawablePadding">10dp</dimen>
+  <dimen name="wgviewImgConditionPadding">42dp</dimen>
+  <dimen name="wgviewImgConditionPaddingFancyWidgets">65dp</dimen>
+  <dimen name="pref_seekbar_fix_positive">12dp</dimen>
+  <dimen name="pref_seekbar_fix_negative">-12dp</dimen>
+  <dimen name="preference_seekbar_padding_end">22dp</dimen>
+</resources>

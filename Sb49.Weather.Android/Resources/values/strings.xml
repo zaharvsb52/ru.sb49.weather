@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Sb49 Weather</string>
+  <string name="WeatherClockAppWidgetName">Sb49 Weather with Clock</string>
+  <string name="WeatherAppWidgetName">@string/ApplicationName</string>
+  <string name="FeedbackMail">yurygleb@gmail.com</string>
+  <string name="AppWidgetLoadingText">Loading...</string>
+  <string name="Degree">°</string>
+  <string name="LastUpdatedText">Updated</string>
+  <string name="PublishedDateText">Forecast date</string>
+  <!-- Keys begin -->
+  <string name="AppWidgetViewKey">appwidgetimageviewkey</string>
+  <string name="AppWidgetIconStyleKey">appwidgeticonstylekey</string>
+  <string name="AppWidgetBackgroundStyleKey">appwidgetbackgroundstylekey</string>
+  <string name="AppWidgetOpacityKey">appwidgetopacitykey</string>
+  <string name="AppWidgetSettingsClockKey">appwidgetsettingsclockkey</string>
+  <string name="ClockTextSizeKey">clocktextsizekey</string>
+  <string name="HourFormatKey">hourformatkey</string>
+  <string name="ExtendedHourFormatKey">extendedhourformatkey</string>
+  <string name="DateFormatKey">dateformatkey</string>
+  <string name="WeatherProviderServerKey">weatherserverskey</string>
+  <string name="WeatherDataKey">weatherdatakey</string>
+  <string name="TemperatureUnitKey">temperatureunitkey</string>
+  <string name="WindSpeedUnitKey">windspeedunitkey</string>
+  <string name="PressureUnitKey">pressureunitkey</string>
+  <string name="VisibilityUnitKey">visibilityunitkey</string>
+  <string name="WeatherApiKey">weatherapikey</string>
+  <string name="RequestCounterKey">requestcounterkey</string>
+  <string name="LocationAddressSettingsKey">locationaddresssettingskey</string>
+  <string name="UseTrackCurrentLocationKey">usetrackcurrentlocationkey</string>
+  <string name="LocationAddressKey">locationaddresskey</string>
+  <string name="ColdAlertedTemperatureKey">coldalertedtemperaturekey</string>
+  <string name="HotAlertedTemperatureKey">hotalertedtemperaturekey</string>
+  <string name="WeatherRefreshIntervalKey">weatherrefreshintervalkey</string>
+  <string name="AppWidgetSettingsKey">appwidgetsettingskey</string>
+  <string name="AlertSettingsKey">alertsettingskey</string>
+  <string name="AppWidgetSettingsCollectionKey">appwidgetsettingscollectionkey</string>
+  <string name="SelectedLocationAddressIdKey">selectedlocationaddressidkey</string>
+  <string name="GeoTrackingServicePriorityKey">geotrackingserviceprioritykey</string>
+  <string name="GeoTrackingServiceIntervalKey">geotrackingserviceintervalkey</string>
+  <string name="GeoTrackingServiceSmallestDisplacementKey">geotrackingservicesmallestdisplacementkey</string>
+  <string name="UseGoogleMapsGeocodingApiKey">usegooglemapsgeocodingapikey</string>
+  <string name="ApiKeysManagementKey">apikeysmanagementkey</string>
+  <string name="CurrentLocationKey">currentlocationkey</string>
+  <string name="IsBootCompletedReceiverKey">isbootcompletedreceiverkey</string>
+  <string name="LoggingUseAndroidLogKey">logginguseandroidlogkey</string>
+  <string name="LoggingUseFileKey">loggingusefilekey</string>
+  <string name="LogFileNameKey">logfilenamekey</string>
+  <string name="LoggingLevelsKey">logginglevelskey</string>
+  <string name="LoggingSelectLogFileKey">loggingselectlogfilekey</string>
+  <string name="LoggingMaximumFileSizeKey">loggingmaximumfilesizekey</string>
+  <string name="LoggingMaxSizeRollBackupsKey">loggingmaxsizerollbackupskey</string>
+  <string name="FileBrowserSettingsKey">filebrowsersettingskey</string>
+  <string name="ShowFileSizeKey">showfilesizekey</string>
+  <string name="ShowFolderSizeKey">showfoldersizekey</string>
+  <string name="Key">7d0LP+ZPS+RnGf4EKHUFfc+JgGId6RlCYAjyseUE0r0jKxTsjhnoBHvvcb3tn4Yu1SBOxFApVxFgCPKx5QTSEg==</string>
+  <!-- Keys end -->
+  <string name="zero">0</string>
+  <string name="one">1</string>
+  <string name="two">2</string>
+  <!--TemperatureUnit begin-->
+  <string name="Celsius">°C</string>
+  <string name="Fahrenheit">°F</string>
+  <!--TemperatureUnit end-->
+  <!--SpeedUnit begin-->
+  <string name="MeterPerSec">m/s</string>
+  <string name="KmPerHour">km/h</string>
+  <string name="MilesPerHour">mi/h</string>
+  <!--SpeedUnit end-->
+  <!--PressureUnit begin-->
+  <string name="HectoPa">hPa</string>
+  <string name="MmHg">mm</string>
+  <string name="MilliBars">mb</string>
+  <string name="Psi">psi</string>
+  <!--PressureUnit end-->
+  <!--DistanceUnit begin-->
+  <string name="Meter">m</string>
+  <string name="Kilometer">km</string>
+  <string name="Miles">mi</string>
+  <!--DistanceUnit end-->
+  <!--Menu contentDescription begin-->
+  <string name="MenuContentDescription">Menu</string>
+  <!--Menu contentDescription end-->
+  <!--Menu IconStyles begin-->
+  <string name="FancyWidgets">Fancy icons</string>
+  <string name="YandexColor">Yandex color icons</string>
+  <string name="YandexMono">Yandex mono icons</string>
+  <!--Menu IconStyles end-->
+  <string name="IsRequiredApiKey">API key is required</string>
+  <string name="PreferencesTitle">Settings</string>
+  <string name="AboutTitle">About</string>
+  <string name="HourFormatTitle">12-hour format</string>
+  <string name="ExtendedHourFormatTitle">Extended hour format</string>
+  <string name="DateFormatTitle">Date format</string>
+  <string name="DateFormatValueDefault">@string/zero</string>
+  <string name="ClockTextSizeTitle">Text size</string>
+  <string name="TempLowIndicator">L:</string>
+  <string name="TempHightIndicator">H:</string>
+  <string name="WeatherProviderServerTitle">Weather provider</string>
+  <string name="WeatherRefreshIntervalTitle">Refresh interval</string>
+  <string name="WeatherRefreshIntervalValueDefault">120</string>
+  <string name="WeatherRefreshIntervalValueMinimum">15</string>
+  <string name="TemperatureUnitTitle">Temperature</string>
+  <string name="WindSpeedUnitTitle">Wind speed</string>
+  <string name="PressureUnitTitle">Pressure</string>
+  <string name="VisibilityUnitTitle">Visibility</string>
+  <string name="UseTrackCurrentLocationTitle">Track your current location</string>
+  <string name="LocationAddressSettingsTitle">Location</string>
+  <string name="LocationAddressTitle">Address</string>
+  <string name="AppWidgetSettingsAppearanceTitle">Appearance</string>
+  <string name="AppWidgetSettingsClockTitle">Clock</string>
+  <string name="AppWidgetsSettingsTitle">@string/AppWidgetSettingsTitle</string>
+  <string name="AppWidgetSettingsTitle">Widget settings</string>
+  <string name="CurrentAppWidgetSettingsTitle">On home screen</string>
+  <string name="GeoTrackingTitle">Location</string>
+  <string name="GeoTrackingServicePriorityTitle">Location accuracy</string>
+  <string name="GeoTrackingServiceIntervalTitle">Interval</string>
+  <string name="GeoTrackingServiceSmallestDisplacementTitle">Smallest displacement</string>
+  <string name="PriorityHighAccuracy">High accuracy</string>
+  <string name="PriorityBalancedPowerAccuracy">Balanced power accuracy (~ 100m)</string>
+  <string name="PriorityLowPower">Low power (~ 10km)</string>
+  <string name="GoogleApiTitle">Google API</string>
+  <string name="GoogleMapsGeocodingApiTitle">Google Maps Geocoding API</string>
+  <string name="UseGoogleMapsGeocodingApiTitle">Use Google Maps Geocoding API</string>
+  <string name="ApiKeysTitle">API keys</string>
+  <string name="ApiKeysManagementTitle">Manage API keys</string>
+  <string name="ImportApiKeysTitle">Import API keys</string>
+  <string name="ExportApiKeysTitle">Export API keys</string>
+  <string name="MenuItemFileBrowserUpwardTitle">Up</string>
+  <string name="MenuItemFileBrowserCreateFolderTitle">Create folder</string>
+  <string name="CreateFolderTitle">New folder</string>
+  <string name="MenuItemFileBrowserSortTitle">Sort</string>
+  <string name="MenuItemFileBrowserSortByNameTitle">By name</string>
+  <string name="MenuItemFileBrowserSortByDateTitle">By date modified</string>
+  <string name="MenuItemFileBrowserSortBySizeTitle">By size</string>
+  <string name="MenuItemFileBrowserSettingsTitle">Settings</string>
+  <string name="NoItems">No items</string>
+  <string name="Save">SAVE</string>
+  <string name="SelectFolder">SELECT \"{0}\"</string>
+  <string name="Gb">GB</string>
+  <string name="Mb">MB</string>
+  <string name="Kb">KB</string>
+  <string name="Byte">B</string>
+  <string name="FreeSpace">{0} free of {1}</string>
+  <string name="ShowFileSizeTitle">Display file size</string>
+  <string name="ShowFolderSizeTitle">Display folder size</string>
+  <string name="LoggingLevelInfo">Info</string>
+  <string name="LoggingLevelError">Error</string>
+  <string name="LoggingTitle">Logging</string>
+  <string name="LoggingUseAndroidLogTitle">Android log</string>
+  <string name="LoggingUseFileTitle">Write log to file</string>
+  <string name="LoggingLevelsTitle">Logging levels</string>
+  <string name="LoggingSelectLogFileTitle">Log file path</string>
+  <string name="LoggingMaximumFileSizeTitle">Maximum log file size</string>
+  <string name="LoggingMaxSizeRollBackupsTitle">Maximum number of backup files</string>
+  <string name="AppWidgetIconStyleTitle">Icons</string>
+  <string name="AppWidgetBackgroundStyleValueDefault">wg_background_black</string>
+  <string name="AppWidgetBackgroundStyleTitle">Background</string>
+  <string name="AppWidgetOpacityTitle">Background transparency</string>
+  <string name="AppWidgetOpacity0">Opaque</string>
+  <string name="AppWidgetOpacity100">Transparent</string>
+  <string name="AlertSettingsTitle">Alert settings</string>
+  <string name="ColdAlertedTemperatureTitle">Cold temperature</string>
+  <string name="HotAlertedTemperatureTitle">Hot temperature</string>
+  <string name="Wind">Wind</string>
+  <string name="Pressure">Pressure</string>
+  <string name="Humidity">Humidity</string>
+  <string name="ApparentTemperature">Feels like</string>
+  <string name="Visibility">Visibility</string>
+  <string name="Sunrise">Sunrise</string>
+  <string name="Sunset">Sunset</string>
+  <string name="RefreshTitle">Refresh</string>
+  <string name="SyncWidgetTitle">Sync the widget</string>
+  <string name="WeatherTitle">Weather</string>
+  <string name="txtLocationAddressHint">Enter address</string>
+  <string name="LocationAddressFormat">city, country code, (latitude, longitude)</string>
+  <string name="Wait">Please wait...</string>
+  <string name="MyLocation">My location</string>
+  <string name="ParseAddressTitle">Add address</string>
+  <string name="hintApiKey">API key</string>
+  <string name="Today">Today</string>
+  <string name="DewPoint">Dew point</string>
+  <string name="CreateAppWidgetTitle">Create widget</string>
+  <string name="RequestCountMessage">Number of server requests</string>
+  <string name="AlertDescription">Alert</string>
+  <string name="LocationDisabledMessageFormat">You need to enable location in your system settings to use geolocation.{0}Would you like to launch the location settings panel?</string>
+  <string name="WeatherProviderTitle">Weather provider</string>
+  <string name="CurrentLocationTitle">Current place</string>
+  <string name="AddLocationTitle">Add location</string>
+  <string name="MenuItemEditLocationTitle">Edit location</string>
+  <string name="EditLocationTitle">Edit location</string>
+  <string name="DeleteLocationTitle">Delete location</string>
+  <string name="DeleteLocationConfirmation">Are you sure you want to delete location \'{0}\'?</string>
+  <string name="IcEditApiKeyContentDescription">Edit API key</string>
+  <string name="IcDeleteApiKeyContentDescription">Delete API key</string>
+  <string name="IcCheckApiKeyContentDescription">Exists API key</string>
+  <string name="IcDeleteApiKeyConfirmation">Are you sure you want to delete API key?</string>
+  <string name="LoggingPropertiesChanged">Logging properties were changed. To apply the changes restart the application.</string>
+  <string name="CurrentLocationEmpty">#current place</string>
+  <string name="Version">Version</string>
+  <string name="IconsCopyRight">Icons copyrights:</string>
+  <string name="IconsCopyRightFancyWidgets">Fancy Widgets Android Does</string>
+  <string name="IconsCopyRightFancyWidgetsUrl">https://play.google.com/store/apps/details?id=com.anddoes.fancywidgets</string>
+  <string name="IconsCopyRightYandexWeather">Yandex.Weather</string>
+  <string name="IconsCopyRightYandexWeatherUrl">https://play.google.com/store/search?q=yandex%20weather</string>
+  <string name="FeedbackTitle">Feedback</string>
+  <string name="MenuItemExportLogFileTitle">Export log</string>
+  <string name="EmailChooserTitle">Send email using...</string>
+  <string name="LocationDistance">Location distance</string>
+  <string name="DemoCondition">#demo clear</string>
+  <string name="DemoLocality">#demo locality</string>
+  <string name="NoData">N/A</string>
+  <string name="UndefinedMale">Undefined</string>
+  <string name="UndefinedFemale">@string/UndefinedMale</string>
+  <string name="UndefinedIt">@string/UndefinedMale</string>
+</resources>

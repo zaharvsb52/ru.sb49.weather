@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Sb49 Rfc822</AssemblyTitle>
+    <AssemblyProduct>Sb49.Rfc822</AssemblyProduct>
+    <AssemblyCompany>SB49 Software</AssemblyCompany>
+    <Copyright>Copyright SB49 Software 2012-2017</Copyright>
+    <AssemblyTrademark>SB49 Software</AssemblyTrademark>
+
+    <AssemblyVersion>1.0.4.8</AssemblyVersion>
+    <AssemblyFileVersion>1.0.4.8</AssemblyFileVersion>
+    
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>

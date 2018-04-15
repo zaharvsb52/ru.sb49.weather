@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewContent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4">
+
+            <TextView
+                android:id="@+id/txtDate"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                tools:text="Вт, Сегодня" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgCondition"
+            android:layout_width="@dimen/itemConditionImageDimen"
+            android:layout_height="@dimen/itemConditionImageDimen"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/umbrela" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.15" />
+
+        <TextView
+            android:id="@+id/txtMinTemp"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="2"
+            android:gravity="end"
+            tools:text="-30°" />
+
+        <TextView
+            android:id="@+id/txtMaxTemp"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="3"
+            android:gravity="end"
+            tools:text="-19°" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/imgWindDirection"
+                android:layout_width="@dimen/itemWindImageDimen"
+                android:layout_height="@dimen/itemWindImageDimen"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="0dp"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                tools:rotation="200"
+                tools:src="@drawable/wind_direction" />
+
+            <TextView
+                android:id="@+id/txtWindDirection"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="2"
+                android:maxLines="2"
+                tools:text="ЮЮ" />
+
+            <TextView
+                android:id="@+id/txtWindSpeed"
+                style="@style/textStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:maxLines="2"
+                tools:text="40 м/с" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lineThickness1dp"
+        tools:background="@color/gray300" />
+
+    <include layout="@layout/view_weather_daily_details_item" />
+</LinearLayout>

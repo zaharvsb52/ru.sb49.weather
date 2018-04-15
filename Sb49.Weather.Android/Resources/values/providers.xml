@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="YahooWeather">Yahoo! Weather</string>
+  <string name="YahooWeatherUrl">https://www.yahoo.com/news/weather/</string>
+  <string name="DarkSkyWeather">Dark Sky Weather</string>
+  <string name="DarkSkyWeatherUrlApi">https://darksky.net/dev/</string>
+  <string name="OpenWeatherMap">OpenWeatherMap</string>
+  <string name="OpenWeatherMapUrlApi">http://openweathermap.org/price</string>
+  <string name="GoogleUrlApi">https://console.developers.google.com</string>
+</resources>

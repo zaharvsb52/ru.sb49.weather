@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItemParseAddress"
+        android:icon="@drawable/ic_menu_add_location_material"
+        android:title="@string/ParseAddressTitle"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuItemMyLocation"
+        android:icon="@drawable/ic_menu_my_location"
+        android:title="@string/MyLocation"
+        app:showAsAction="ifRoom" />
+</menu>

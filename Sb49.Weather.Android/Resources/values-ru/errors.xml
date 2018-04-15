@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name="NoForecastMessage">Прогноз погоды сейчас не доступен.</string>
+  <string name="UnableDetermineAddress">Местоположение не определено. Повторите попытку через несколько минут.</string>
+  <string name="UndefinedWeatherServiceProvider">Не определен поставщик погоды.</string>
+  <string name="UndefinedCurrentLocation">Текущее местоположение не определено.</string>
+  <string name="UndefinedLocation">Местоположение не определено.</string>
+  <string name="UndefinedAddressCoordinates">Не определены координаты адреса.</string>
+  <string name="WeatherProviderIsNotImplemented">Выбранный поставщик погоды \'{0}\' не может быть использован. Выберите другого поставщика.</string>
+  <string name="NoSDcardFound">SD карта не найдена.</string>
+  <string name="InputIntegerError">Ошибка. Введите целое число.</string>
+  <string name="ProhibitLocationSettings">Определение местоположения запрещено настройками системы.</string>
+  <string name="EmptyLocationAddressError">Адрес не определен.</string>
+  <string name="ExstsLocationAddressError">Такой адрес уже существует.</string>
+  <string name="ConnectFailure">Сеть недоступна. Проверьте доступ в Интернет.</string>
+  <string name="EmptyLoggingLevelsError">Уровени логирования не определены.</string>
+  <string name="IllegalLogFileUri">Невозможно определить путь лог-файла. Выберите другое расположение.</string>
+  <string name="LocalityIsNullLocationAddressError">Не заполнено обязательное поле \'населенный пункт\' в адресе.</string>
+  <string name="TaskCanceled">Выполнение задачи прервано.</string>
+  <string name="TaskTimeout">Превышено время выполнения задачи.</string>
+  <string name="NoEmailClientsInstalled">Почтовый клиент не инсталлирован.</string>
+  <string name="InternalError">Произошла внутренняя ошибка.</string>
+</resources>

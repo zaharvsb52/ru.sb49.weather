@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:minHeight="@dimen/menuItemHeight"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_menu_item" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lineThickness1dp"
+        android:layout_marginBottom="@dimen/menuItemSeparatorMargin"
+        android:layout_marginEnd="@dimen/menuItemSeparatorMargin"
+        android:layout_marginStart="@dimen/menuItemSeparatorMargin"
+        android:layout_marginTop="@dimen/menuItemSeparatorMargin"
+        android:background="?attr/menuDrawerLayoutItemIconRightBackground"
+        tools:background="@color/gray300" />
+</LinearLayout>
